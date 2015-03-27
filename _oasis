@@ -41,7 +41,8 @@ Document bap
                         bap.types,
                         bap.image,
                         bap.disasm,
-                        bap.dwarf
+                        bap.dwarf,
+                        bap.ssa
 
 Flag serialization
   Description: Build serialization library
@@ -80,6 +81,7 @@ Library bap
                    bap.elf,
                    bap.image,
                    bap.types,
+                   bap.ssa,
                    dynlink,
                    findlib
   Modules:         Bap,
@@ -133,7 +135,8 @@ Library types
                    Bap_trie,
                    Bap_type,
                    Bap_var,
-                   Bap_visitor
+                   Bap_visitor,
+                   Bap_ssa
 
 Library conceval
   Path: lib/bap_types
@@ -205,6 +208,14 @@ Library dwarf
                  Dwarf_input,
                  Dwarf_leb128,
                  Dwarf_types
+
+Library ssa
+  Path:          lib/bap_ssa
+  FindlibParent: bap
+  FindlibName:   ssa
+  BuildDepends:  bap.image,
+                 bap.types
+  Modules:       Bap_2ssa
 
 Library disasm
   Path:          lib/bap_disasm
