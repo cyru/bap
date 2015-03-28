@@ -1,7 +1,7 @@
 (** Table.
 
     Tables are used to partition memory region into a set of
-    non-intersecting areas. Each area is assosiated with arbitrary
+    non-intersecting areas. Each area is associated with arbitrary
     value of type ['a] bound to the type of the table.
 
     All operations over tables are purely applicative, i.e. there is

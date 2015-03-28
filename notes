@@ -1,0 +1,25 @@
+bap_types:
+- bap_addr.ml[i] : extends [Bitvector] with extra functions to represent
+  them as addresses
+- bap_arch.ml[i] : extends the arch interface
+- bap_bil.ml : modules for types bil,stmt,exp and modules Stmt, Exp
+- bap_bitvector.ml[i] : a type for repreesenting binary values taking endianness and bit-width into account
+- bap_common.ml : common bil type definitions, should be included in most modules
+- bap_exp.ml[i] : extends exp interface
+- bap_helpers.ml[i] : helpers to work on bil type
+- bap_int_conversions.ml[i] : conversions between integer types including bitvectors
+- bap_integer_intf.ml : signature definitions for integer types
+- bap_integer.ml : functor to add the infix operators to a module for integer
+- bap_regular.ml[i] : functor to create regular types that can be compared, used in maps, sets, hashtables, printers, ...
+- bap_seq.ml[i] : a sequence type not very different from list type
+- bap_size.ml[i] : extend size type
+- bap_stmt.ml[i] : extend stmt interface
+- bap_trie.ml[i] : a functor that will create a Trie data structure for a provided key type
+- bap_type.ml[i] : extends typ interface
+- bap_types.ml : contains all the standard types
+- bap_var.ml[i] : variables (are regular types)
+- bap_vistor.ml[i] : provides three classes that visits AST:
+                     * vistor that folds arbitrary value over the AST
+                     * finder that can prematurely finish the traversal
+                     * mapper that maps AST, allowing limited transformation
+                       of its structure

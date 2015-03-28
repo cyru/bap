@@ -1,7 +1,7 @@
 (** Common BIL type definitions.
 
     In this module basic types are defined, and it can be considered
-    as an internal [Std] module, that should be included most modules,
+    as an internal [Std] module, that should be included in most modules,
     internal to the library. *)
 open Core_kernel.Std
 

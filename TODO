@@ -1,0 +1,12 @@
+- contact BAP guys
+
+- read the litterature
+
+- port of SSA translation:
+    SSA translation takes as input a table of blocks where the block type is
+    inside the disasm module and should be transformed to a new block type
+    for ssa form
+    
+    To get the control flow graph, lib/bap_disasm/bap_disasm_symtab.mli 
+    has to_graph that takes a symbol table and a block table and 
+    construct a call graph.
